@@ -1,0 +1,330 @@
+
+*{
+
+    top: 0px;
+    left: 0px;
+
+}
+
+header{
+
+    width: 100%;
+    height: 100vh;
+    
+    padding-top: 80px;
+    background-image:linear-gradient(rgba(214,215,215,0.2), rgba(215,215,215,0.2)), url(dark-background-abstract-background-network-3d-background-5120x2880-8324.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+}
+
+
+
+#container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+nav{
+
+    position: absolute;
+    width: 95%;
+    height: 2cm;
+    top: 0px;
+    left: 5px;
+    padding-left: 5px;
+    padding-top: 8px;
+
+
+
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 30px;
+}
+
+ul li a{
+
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.5s;
+
+}
+
+ul li a:hover{
+
+    border-bottom: 3px solid white;
+
+}
+
+nav img{
+
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+
+}
+
+#heading{
+    background-color: transparent;
+    width: 100%;
+    height: 750px;
+}
+
+#pic{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+#heading #inside{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#heading #inside #centered #heading1, #heading #inside #centered #heading2, #heading #inside #centered #heading3{
+
+    width: 100%;
+    display: block;
+
+}
+
+#heading #inside #centered{
+
+    padding-left: 5px;
+
+}
+
+#heading #inside #centered #heading1{
+
+    font-size: 90px;
+    font-weight: bolder;
+    color: white ;
+
+}
+
+#heading #inside #centered #heading2{
+
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(146, 141, 141) ;
+
+}
+
+#heading #inside #centered #heading3{
+
+    padding-top: 50px;
+
+}
+
+#video{
+
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: rgb(223, 221, 221);
+    font-size: 20px;
+
+}
+
+#pic #inside{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+#pic #inside img{
+
+    width: 15cm;
+
+}
+
+#playGame{
+
+    color: green;
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: rgb(223, 221, 221);
+    font-size: 20px;
+
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes changeColor{
+
+    25%{background-color: white; color: black;}
+    50%{background-color: transparent; color: rgb(223, 221, 221);}
+    75%{background-color: white; color: black;}
+
+}
+
+.smallToBig{
+
+
+    animation-name: small2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes small2{
+
+0%{font-size: 0px;}
+100%{font-size: 90px;}
+
+}
+
+.picZoom2{
+
+    animation-name: picZoom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes picZoom{
+
+    0%{width: 0px;}
+    100%{width: 15cm;}
+    
+}
+
+.buttonGrow2{
+
+    animation-name: buttonGrow;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes buttonGrow{
+
+    0%{height: 0px;
+        width: 0px;
+        border-radius: 0px;}
+    100%{height: 40px;
+        width: 150px;
+        border-radius: 30px;}
+    
+}
+
+main{
+    margin-top: 2px;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+}
+
+#content_details{
+
+    background-color: rgb(204, 204, 204);
+    height: auto;
+
+}
+
+#content_details_space{
+
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    height: 100%;
+
+}
+
+footer{
+
+   height: auto; 
+
+}
+
+.footer_first{
+
+    background-color: rgb(27, 26, 26);
+    height: 4cm;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer_first h4{
+
+    color: white;
+    display: inline;
+
+}
+
+#mini_Content{
+
+    color: white;
+    display: inline;
+
+}
+
+#icons{
+
+    color: white;
+    display: inline;
+
+}
+
+.footer_second{
+
+    background-color: rgb(0, 0, 0);
+    height: 1cm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.footer_second p{
+
+    display: inline;
+    color: rgb(210, 209, 209);
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+select{
+
+    background-color: transparent;
+    border: none;
+
+}
+

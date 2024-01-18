@@ -1,0 +1,101 @@
+
+body{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+h2{
+    text-align: center;
+    color: rgb(100, 100, 100) ;
+    font-size: 70px;
+}
+
+#game{
+
+    display: grid;
+
+    gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(255, 255, 255);
+    height: 9cm;
+    width: 9cm;
+
+
+}
+
+.blocks{
+
+
+    background-color: rgb(0, 0, 0);
+    font-size: 50px;
+    color: rgb(243, 237, 237);
+    height: 3cm;
+    border: none;
+
+
+}
+
+#red, #red2{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#score{
+
+    color:brown;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.gameover_class{
+
+    width: 9cm;
+    height: 3cm;
+    border: 5px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    
+
+    animation-name: tyo;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+.gameover_appear{
+
+    visibility: visible;
+
+}
+
+@keyframes tyo{
+
+    0%{border-top-color: blueviolet;
+        border-left-color: rgb(104, 99, 108);}
+    25%{border-right-color: blueviolet; border-top-color: rgb(104, 99, 108);}
+    50%{border-bottom-color: blueviolet; border-right-color: rgb(104, 99, 108);}
+    75%{border-left-color: blueviolet; border-bottom-color: rgb(104, 99, 108);}
+
+
+}
+
+#gameover_message, #gameover_message2{
+
+    text-align: center;
+   color: aliceblue;
+    height: 20px;
+
+
+}
